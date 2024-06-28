@@ -32,6 +32,29 @@
 
   <!--the body contains all the stuff the browser shows-->
   <body>
+
+  <!--Anchors aka links are use to redirect the users from 
+  
+  -- current page to another page
+  -- different location in the same page
+  -- from the same page to different website
+  -->
+
+  <h1>**LINKS**</h1>
+  <!--redirecting to a different external web page-->
+  <a href="https://github.com/codeitashu5/Html/pull/1/commits">link to commits</a>
+
+  <!--Redirection different page in the project-->
+  <p>This will lead to different page 
+     that exists in our project <a href="article.html"> page-link</a></p>
+
+
+  <p>Link to different location in same page <a href="#powers"> Power</a></p>   
+  
+  
+
+
+
     <h1>Heading For the article </h1>
     <h2>Sub-heading</h2>
     <h3>sub-sub heading</h3>
@@ -71,6 +94,8 @@
   
   <h1>List</h1>
 
+
+ <!--A list with only bullet points -->
   <h2>UnOrdered List</h2>
  
   <ul>
@@ -78,6 +103,8 @@
    <li>unordered second element</li>
    <li>unordered third element</li>
   </ul>
+
+<!--A list with incressing integers with each number -->
 
   <h2>Ordered List</h2>
 
@@ -87,14 +114,19 @@
    <li>unordered third element</li>
   </ol>
 
+
+  <!--dl can have dt for which we can have multiple values -->
+
   <dl>
 
    <dt>User</dt>
+
    <dd>Thanos</dd>
    <dd>Gamora</dd>
    <dd>Hulk</dd>
 
-   <dt>Power</dt>
+   <dt id = "powers"> Power</dt>
+
    <dd>Chutki</dd>
    <dd>Non</dd>
    <dd>Madness</dd>
