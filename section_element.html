@@ -36,8 +36,17 @@
     <!-- Header element is the parent of 
          the two header text that are there--> 
     <header>
+
+      <!--
+        div is used as a styling element in css which we will use later on
+        h1,h2 were the childs now we have one child called the div 
+        and div has 2 childs h1 and h2 
+      -->
+
+      <div>
         <h1>Ultimage Course</h1>
-        <h1>HTML & CSS Basics</h1>
+        <h1>HTML & CSS Basics</h1>          
+      </div>
 
 
     <!--
@@ -48,72 +57,122 @@
         or it can be to an external site 
     -->
 
-     <nav>
-      
-      <ul>
-        <li>
-          <a href="Home.html">Home</a>
-        </li>
+      <nav>
 
-        <li>
-          <a href="Contact.html">Contact</a>
-        </li>
+        <h2>Navigations</h2>
 
-        <li>
-          <a href="Help.html">Help</a>
-        </li>
+        <ul>
+          <li>
+            <a href="Home.html">Home</a>
+          </li>
 
-      </ul>
+          <li>
+            <a href="Contact.html">Contact</a>
+          </li>
 
-     </nav>
+          <li>
+            <a href="Help.html">Help</a>
+          </li>
+
+        </ul>
+
+      </nav>
 
     </header>
+
+    <!--only things with header is that we 
+    can not have a header inside a header and thats that-->  
   
+    <!-- the main as the name suggest is the main area of the given page
+         there can be only one main section in the web page
+    -->  
+     
+    <main>
 
-    <header>
-      <h2 id="anArticle">An Article</h2>
-    </header>
+        <article>
+
+        <!-- 
+          section is used to further give meaning to the article 
+          to create meaning full devision in the project
+
+          reduction of complexity is the purpose of section 
+          and one thing more the section have some semantic value
+          means that it will be shown in the inspect tab as well.
+        --> 
+
+          <section>
+
+            <header>
+              <h2 id="anArticle">An Article</h2>
+            </header>
+
+
+            <p> Gotham City,or simply Gotham, is a fictional city in the Eastern United 
+              States that serves as the primary city appearing in American comic books 
+              published by DC Comics.It is best known as the home of the superhero, Batman, 
+              and his allies and foes. Created by writerBill Finger and artist Bob Kane, the
+              city was first identified as Batman's place of residence in Batman #4 (December 1940)
+              and has since been the primary setting for stories featuring the character. In most of its incarnations, 
+                Gotham is depicted as one of the most crime-ridden cities in the world.</p>
+
+            <!--it is used to mark the media element in an html-->    
+            <figure>
+              <img src="assets/ultimate.svg" alt ="ulimate-image"/>
+              <figcaption>Fig - 1.0</figcaption>
+            </figure>
+
+          </section> 
+
+          <section>
+
+            <h3>An Article Subheading</h3>
+        
+            <p>Gotham City,or simply Gotham, is a fictional city in the Eastern United 
+              States that serves as the primary city appearing in American comic books 
+              published by DC Comics.It is best known as the home of the superhero, Batman, 
+              and his allies and foes. Created by writerBill Finger and artist Bob Kane, the
+              city was first identified as Batman's place of residence in Batman #4 (December 1940)
+              and has since been the primary setting for stories featuring the character. In most of its incarnations, 
+              Gotham is depicted as one of the most crime-ridden cities in the world.</p>
+
+
+          </section>  
+
+          <footer>
+            <p> Written By - Batman</p> 
+          </footer>
+          
+
+        </article>
+
+    </main>
+ 
+
+ <!-- 
+    there can be one one or more aside element in a web page
+    used to represent the content that is not very impprtant
+  -->
   
+    <aside>
 
-  <p>Gotham City,or simply Gotham, is a fictional city in the Eastern United 
-    States that serves as the primary city appearing in American comic books 
-    published by DC Comics.It is best known as the home of the superhero, Batman, 
-    and his allies and foes. Created by writerBill Finger and artist Bob Kane, the
-    city was first identified as Batman's place of residence in Batman #4 (December 1940)
-    and has since been the primary setting for stories featuring the character. In most of its incarnations, 
-    Gotham is depicted as one of the most crime-ridden cities in the world.</p>
+      <article>
 
-    <img src="assets/ultimate.svg" alt ="ulimate-image"/>
+        <header>
+          <h3>Related Contents</h3>
+        </header>
 
+        <ol>
+          <li> <a href="#anArticle">Another Aricle</a> </li>
+          <li> <a href="https://github.com/codeitashu5/Html/pull/1/commits">A web page</a> </li>
+          <li> <a href="index.html">Inserted link</a> </li>
+        </ol>
 
-   <h3>An Article Subheading</h3>
+        <p>Gotham City,or simply Gotham, is a fictional city in the Eastern United </p>
 
-   <p>Gotham City,or simply Gotham, is a fictional city in the Eastern United 
-    States that serves as the primary city appearing in American comic books 
-    published by DC Comics.It is best known as the home of the superhero, Batman, 
-    and his allies and foes. Created by writerBill Finger and artist Bob Kane, the
-    city was first identified as Batman's place of residence in Batman #4 (December 1940)
-    and has since been the primary setting for stories featuring the character. In most of its incarnations, 
-    Gotham is depicted as one of the most crime-ridden cities in the world.</p>
+      </article>
 
-<!--only things with header is that we 
-    can not have a header inside a header and thats that-->
-    <header>
-      <h3>Related Contents</h3>
-    </header>
-
-    
-   
-
-    <ol>
-
-     <li> <a href="#anArticle">Another Aricle</a> </li>
-     <li> <a href="https://github.com/codeitashu5/Html/pull/1/commits">A web page</a> </li>
-     <li> <a href="index.html">Inserted link</a> </li>
-
-    </ol>
-
-    <p>Gotham City,or simply Gotham, is a fictional city in the Eastern United </p>
+    </aside>  
+ 
 
     <!-- the footer are used to group {the group can be of one or many}
          inforamation that are usually are some kind of solutation
