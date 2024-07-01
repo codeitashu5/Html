@@ -11,7 +11,7 @@
      <meta name="description"
      content="The contents associated with the web page">   
 
-    <title>Section Elements</title>
+    <title>Forms</title>
     <link rel="appel-touch-icon" href="icon.png">
      
   </head>
@@ -25,10 +25,79 @@
 
     <!--used to denote that we are creating an form in html-->
     <form>
+
         <!--in this we can section out different areas in the form-->
         <fieldset>
-            <legend>Form Secion - 1</legend>
+            <!--title for the section of large form input-->
+            <legend>Lables and Input</legend> 
+            
+            <!--
+            for connection lable to input 
+            name connection the entered input to the code -- not known yet
+            -->
+
+            <label for = "username"> username : </label>
+            <input type = "text" id = "username" name="user"/>
+
+            <label for = "password"> password : </label>
+            <input type = "password" id = "password" name="password"/>
+
+            <label for = "date"> date : </label>
+            <input type = "date" id = "date" name="date"/>
+
+
+            <label for = "file"> fieldset : </label>
+            <input type = "file" id = "file" name="file"/>
+
+            <label for = "check"> Are you 18++ : </label>
+            <input type = "checkbox" id = "check" name="check"/>
+
+        
+            <!-- here name is used to group the radio buttons -->
+            <label for ="one"> One</label>
+            <input type = "radio" id = "one" name = "radioGroup">
+
+            <label for ="two"> Two</label>
+            <input type = "radio" id = "two" name = "radioGroup">
+
+            <!--once selected will not be able to unselect it
+                using radion buttons for sinle bool input is not 
+                prefered for that use check boxes
+            -->
+
+            <label for ="there"> Three</label>
+            <input type = "radio" id = "three" name = "radioGroup1">
+
+
         </fieldset>
+
+
+        <fieldset>
+            <legend>More Form Data</legend>
+
+            <!--this is used to create a drop down for the user-->
+            <label for = "dd"> Drop Down : </label>
+            <select id = "dd" name = "dropDown">
+                <option value = "option1"> One </option>
+                <option value = "option2"> Two </option>
+                <option value = "option3"> Three </option>
+            </select>
+
+
+
+
+        </fieldset>
+
+        
+        <!--
+         both of them can be used to submit form 
+         what submiting actually means that we will send 
+         the inputed value by the user some where in the code
+        -->
+
+        <button type = "submit">Submit Form</button>
+        <input type = "submit" value="Submit Form"/>
+
     </form>
    
    <footer>
