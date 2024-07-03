@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+     <!--the character set our web page will use-->
+     <meta charset="utf-8">
+
+     <!--
+      it appears same accross all the devices
+      so that the 1 pxl is same accross all the devices
+     -->
+     <meta name="viewport" 
+      content="width=device-width,
+      initial-scale=1">
+
+
+    <!-- this shows what the website is all about -->
+     <meta name="description"
+     content="The contents associated with the web page">
+
+    <!--tittle of the website-->
+    
+    <title>Section Elements</title>
+
+    <!-- 
+     I don't know much about it but it is used to 
+     give title icon to specific devices -->
+    <link rel="appel-touch-icon" href="icon.png">
+     
+  </head>
+
+
+  <!--the body contains all the stuff the browser shows-->
+  <body>
+
+    <!-- Header element is the parent of 
+         the two header text that are there--> 
+    <header>
+
+      <!--
+        div is used as a styling element in css which we will use later on
+        h1,h2 were the childs now we have one child called the div 
+        and div has 2 childs h1 and h2 
+      -->
+
+      <div>
+        <h1>Ultimage Course</h1>
+        <h1>HTML & CSS Basics</h1>          
+      </div>
+
+
+    <!--
+        This is used to show that the things inded the 
+        tags are used for navigation only
+
+        the navigation can be from one page to another 
+        or it can be to an external site 
+    -->
+
+      <nav>
+
+        <h2>Navigations</h2>
+
+        <ul>
+          <li>
+            <a href="Home.html">Home</a>
+          </li>
+
+          <li>
+            <a href="Contact.html">Contact</a>
+          </li>
+
+          <li>
+            <a href="Help.html">Help</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <!--only things with header is that we 
+    can not have a header inside a header and thats that-->  
+  
+    <!-- the main as the name suggest is the main area of the given page
+         there can be only one main section in the web page
+    -->  
+     
+    <main>
+
+        <article>
+
+        <!-- 
+          section is used to further give meaning to the article 
+          to create meaning full devision in the project
+
+          reduction of complexity is the purpose of section 
+          and one thing more the section have some semantic value
+          means that it will be shown in the inspect tab as well.
+        --> 
+
+          <section>
+
+            <header>
+              <h2 id="anArticle">An Article</h2>
+            </header>
+
+
+            <p> Gotham City,or simply Gotham, is a fictional city in the Eastern United 
+              States that serves as the primary city appearing in American comic books 
+              published by DC Comics.It is best known as the home of the superhero, Batman, 
+              and his allies and foes. Created by writerBill Finger and artist Bob Kane, the
+              city was first identified as Batman's place of residence in Batman #4 (December 1940)
+              and has since been the primary setting for stories featuring the character. In most of its incarnations, 
+                Gotham is depicted as one of the most crime-ridden cities in the world.</p>
+
+            <!--it is used to mark the media element in an html-->    
+            <figure>
+              <img src="assets/ultimate.svg" alt ="ulimate-image"/>
+              <figcaption>Fig - 1.0</figcaption>
+            </figure>
+
+          </section> 
+
+          <section>
+
+            <h3>An Article Subheading</h3>
+        
+            <p>Gotham City,or simply Gotham, is a fictional city in the Eastern United 
+              States that serves as the primary city appearing in American comic books 
+              published by DC Comics.It is best known as the home of the superhero, Batman, 
+              and his allies and foes. Created by writerBill Finger and artist Bob Kane, the
+              city was first identified as Batman's place of residence in Batman #4 (December 1940)
+              and has since been the primary setting for stories featuring the character. In most of its incarnations, 
+              Gotham is depicted as one of the most crime-ridden cities in the world.</p>
+
+
+          </section>  
+
+          <footer>
+            <p> Written By - Batman</p> 
+          </footer>
+          
+
+        </article>
+
+    </main>
+ 
+
+ <!-- 
+    there can be one one or more aside element in a web page
+    used to represent the content that is not very impprtant
+  -->
+  
+    <aside>
+
+      <article>
+
+        <header>
+          <h3>Related Contents</h3>
+        </header>
+
+        <ol>
+          <li> <a href="#anArticle">Another Aricle</a> </li>
+          <li> <a href="https://github.com/codeitashu5/Html/pull/1/commits">A web page</a> </li>
+          <li> <a href="index.html">Inserted link</a> </li>
+        </ol>
+
+        <p>Gotham City,or simply Gotham, is a fictional city in the Eastern United </p>
+
+      </article>
+
+    </aside>  
+ 
+
+    <!-- the footer are used to group {the group can be of one or many}
+         inforamation that are usually are some kind of solutation
+         regars or content written by these sort of stuff.
+    -->
+    <footer>
+      <p>Gotham City Production @gothamCity</p>
+    </footer>
+
+    
+
+  </body>
+
+</html>

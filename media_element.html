@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+     <meta charset="utf-8">
+
+     <meta name="viewport" 
+      content="width=device-width,
+      initial-scale=1">
+
+     <meta name="description"
+     content="The contents associated with the web page">   
+
+    <title>Media</title>
+    <link rel="appel-touch-icon" href="icon.png">
+     
+  </head>
+
+  <body>
+
+    <header>
+        <h1>Media Practice</h1>
+        <h2>HTML & CSS Basics: Media</h2>
+    </header>
+
+    <!--
+      loop and contorals are element that are activated once
+      included in the atribute list of video
+    -->
+    <video width="360" height="360" controls loop 
+     poster="assets/images/hero.webp">
+     <!--multiple sources can be provided if we have them-->
+     <source src = "assets/video/fight.mp4" type = "video/mp4"/>
+    </video>
+
+    <audio controls loop>
+      <source src="assets/audio/dummy.mp3" type = "audio/mp3"/>
+    </audio>
+
+    <!-- if it supports the .png file then it will use that inst -->
+    <picture>
+      <source src="assets/ultimate.png" type = "image/png"/>
+      <img src="assets/ultimate.svg" alt="failed to load course image"/>
+    </picture>
+
+   <footer>
+        <p>Started on  <time datetime="2024-07-01"> 2024 July 1</time> </p>
+   </footer>
+   
+  </body>
+
+</html>

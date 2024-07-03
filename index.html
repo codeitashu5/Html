@@ -1,14 +1,149 @@
 <!doctype html>
-<html>
+<html lang="en">
+  <head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Ultimate Courses</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+     <!--the character set our web page will use-->
+     <meta charset="utf-8">
 
-<body>
-  <h1>HELLO WORLD !!!!! </h1>
-</body>
+     <!--
+      it appears same accross all the devices
+      so that the 1 pxl is same accross all the devices
+     -->
+     <meta name="viewport" 
+      content="width=device-width,
+      initial-scale=1">
+
+
+    <!-- this shows what the website is all about -->
+     <meta name="description"
+     content="The contents associated with the web page">
+
+    <!--tittle of the website-->
+    
+    <title>Html tittle</title>
+
+    <!-- 
+     I don't know much about it but it is used to 
+     give title icon to specific devices -->
+    <link rel="appel-touch-icon" href="icon.png">
+     
+  </head>
+
+
+  <!--the body contains all the stuff the browser shows-->
+  <body>
+
+  <!--Anchors aka links are use to redirect the users from 
+  
+  -- current page to another page
+  -- different location in the same page
+  -- from the same page to different website
+  -->
+    <h1>** Heading**</h1>
+    <h2>Sub-heading</h2>
+    <h3>sub-sub heading</h3>
+    <p>The content about the article that 
+    we are going to show to the users</p>
+
+
+  <!-- using styling with the paragraph element -->
+
+  <h1>**Paragraph**</h1>
+    both make the text bold but strong and b tags
+    its an seo thing they say but they will appear 
+    bold to the user and thats it.
+  -->
+
+  <p> <strong> Strong </strong> Goes to <strong> School </strong> </p>
+  <p> <b> Bold</b> Goes to<b> School</b></p>
+ 
+  <!--Appling emphasis on any text both of them make etalic -->   
+  <p> Put <em>emphasis</em> on text</p>
+  <p> Put <i>italic</i> on text</p>
+
+
+  <!--span element it does not do any changes at all 
+  then why use it anyway-->
+
+  <!-- 
+  using span we can style spesific text in css as well in html
+  this is usefull in cases where we need different colour for different texts
+  -->
+  <p> <span style="color: red;">text has span</span> -- text does not have span</p>
+
+  <!--Used for semantic but can be used inside 
+  java script so we can modify time and date-->
+  <time datetime="9-12">9th of December</time>
+
+  
+  <h1>**List**</h1>
+
+
+ <!--A list with only bullet points -->
+  <h2>UnOrdered List</h2>
+ 
+  <ul>
+   <li>unordered first element</li>
+   <li>unordered second element</li>
+   <li>unordered third element</li>
+  </ul>
+
+<!--A list with incressing integers with each number -->
+
+  <h2>Ordered List</h2>
+
+  <ol>
+   <li>unordered first element</li>
+   <li>unordered second element</li>
+   <li>unordered third element</li>
+  </ol>
+
+
+  <!--dl can have dt for which we can have multiple values -->
+
+  <h2>Discription List</h2>
+
+  <dl>
+
+   <dt>User</dt>
+
+   <dd>Thanos</dd>
+   <dd>Gamora</dd>
+   <dd>Hulk</dd>
+
+   <dt id = "powers"> Power</dt>
+
+   <dd>Chutki</dd>
+   <dd>Non</dd>
+   <dd>Madness</dd>
+
+  </dl>
+
+
+  <h1>**Links**</h1>
+  <!--redirecting to a different external web page-->
+  <a href="https://github.com/codeitashu5/Html/pull/1/commits">link to commits</a>
+
+  <!--Redirection different page in the project-->
+  <p>This will lead to different page 
+     that exists in our project <a href="article.html"> page-link</a></p>
+
+
+  <p>Link to different location in same page <a href="#powers"> Power</a></p>
+  
+  
+  <h1>**Button**</h1>
+
+  <button>
+    <a href="https://github.com/codeitashu5/Html/pull/1/commits">link to commits</a>
+  </button>
+  
+
+  <h1>**Image**</h1>
+  <img src="assets/ultimate.svg" 
+   alt="ulitemate image description incase the image don't show up"/>
+
+
+  </body>
 
 </html>
